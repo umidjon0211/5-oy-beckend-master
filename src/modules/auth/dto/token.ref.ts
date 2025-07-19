@@ -5,5 +5,6 @@ export class RefreshTokenDto {
   @ApiProperty()
   @IsString()
   @IsJWT()
-  token: string;
+  refreshToken: string;
 }
+

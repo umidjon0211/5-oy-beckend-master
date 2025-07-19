@@ -4,11 +4,11 @@ import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 export function setupSwagger(app: INestApplication): void {
   const config = new DocumentBuilder()
     .setTitle('Blaze Master Backend')
-    .setDescription('Blaze API')
+    .setDescription('Balze API')
     .setVersion('1.0')
     .addBearerAuth()
     .build();
 
   const document = SwaggerModule.createDocument(app, config);
-  SwaggerModule.setup('umidjon', app, document);
+  SwaggerModule.setup('api-docs', app, document);
 }

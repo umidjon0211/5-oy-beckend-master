@@ -11,6 +11,8 @@ async function bootstrap() {
 
   
   await app.listen(process.env.PORT ?? 5910);
-  console.log(`http://localhost:5910/umidjon`);
+  console.log(`http://localhost:5910/api-docs`);
   
 }
+
+bootstrap()
